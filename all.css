@@ -1,0 +1,89 @@
+body{
+    background-color: #DCD6F7;
+}
+*{
+    margin:0;
+    padding:0;
+    font-family: Patrick Hand, sans serif;
+}
+
+li,a,button{
+    font-family: Patrick Hand, sans serif;
+    font-size:17px;
+    color:rgb(30, 30, 30);
+}
+
+header{
+    display:flex;
+    justify-content:flex-end;
+    border-bottom:10px;
+    border-bottom-style:solid;
+    border-bottom-color:rgb(78, 132, 153);
+    align-items: center;
+    height:60px;
+    padding:30px 10%;
+    background-color: #A6B1E1;
+    transition:.55s;
+}
+
+.logo{
+    margin-right:auto;
+    cursor:pointer;
+    width:80px;
+    height:80px;
+    transition:.30s;
+}
+
+.logo:hover{
+    width:90px;
+    height:90px;
+}
+
+.nav-links{
+    list-style:none;
+    width:250px;
+}
+
+.nav-links li{
+    display:inline-block;
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-right:20px;
+}
+
+.nav-links li a {
+    transition: .3s;
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    color:#be7489;
+}
+
+button{
+    padding: 4px 25px;
+    background-color: #6499f6;
+    border:none;
+    border-radius:3px;
+    cursor:pointer;
+    transition:.3s;
+    
+}
+
+button:hover{
+    background-color:#985F6F ;
+    color: rgb(255, 255, 255);
+    
+}
+
+
+
+.title{
+    text-align: center;
+    font-size: 55px;
+    font-family: Patrick Hand;
+    background: linear-gradient (to left, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #b5c130, #f9a825, #ff5722);
+    -webkit-background-clip: text;
+     background-clip:text;
+    -webkit-text-fill-color: transparent;
+}

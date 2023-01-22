@@ -1,0 +1,47 @@
+body{
+    height:1000px;
+}
+
+.club-info{
+    background-color: rgb(250, 217, 223);
+    width:800px;
+    height:250px;
+    font-size:25px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-width:5px;
+    border-color:rgb(214, 121, 121);
+    border-style: solid;
+    transition: .15s;
+
+}
+
+.title{
+    margin-top:70px;
+    margin-bottom:30px;
+    font-size: 40px;
+    background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #b5c130, #f9a825, #ff5722);
+    -webkit-background-clip: text;
+    background-clip:text;
+    -webkit-text-fill-color: transparent;
+}
+
+.body2{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media all and (max-width: 900px) {
+    .club-info{
+        width:350px;
+    }
+
+    .title{
+        font-size:25px;
+    }
+
+
+}
