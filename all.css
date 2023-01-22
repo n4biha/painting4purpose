@@ -79,11 +79,15 @@ button:hover{
 
 
 .title{
-    text-align: center;
-    font-size: 55px;
-    font-family: Patrick Hand;
-    background: linear-gradient (to left, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #b5c130, #f9a825, #ff5722);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size:200px;
+    margin-top:70px;
+    margin-bottom:30px;
+    font-size: 40px;
+    background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #b5c130, #f9a825, #ff5722);
     -webkit-background-clip: text;
-     background-clip:text;
+    background-clip:text;
     -webkit-text-fill-color: transparent;
 }
