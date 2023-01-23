@@ -1,0 +1,17 @@
+.image-container{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+
+.image-item{
+    width:500px;
+    display:grid;
+    border: 2px solid palevioletred;
+    column-gap: 20px;
+    row-gap: 20px;
+}
