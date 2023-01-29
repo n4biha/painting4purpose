@@ -11,7 +11,7 @@
 .image-item{
     width:500px;
     display:grid;
-    border: 2px solid palevioletred;
     column-gap: 20px;
     row-gap: 20px;
+
 }
