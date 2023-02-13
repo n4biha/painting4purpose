@@ -10,15 +10,32 @@
     <title>Painting for Purpose</title>
 </head>
 <body>
+    <script>
+        const toggle = () => {
+          document.getElementById("nav").classList.toggle("navactive");
+        };
+      </script>
     <header>
-        <a href="index.html" class="logo"><img class=logo src="images/pfplogo.PNG"></a>
-          <nav>
-              <ul class="nav-links">
-                  <li><a href="contact.html">Contact Us</a></li>
-                  <li><a href="gallery.html">Image Gallery</a></li>
-              </ul>
-          </nav>
-          <a class="join" href="https://bit.ly/taftpfp"><button>Join Today</button></a>
+        <div class="brand">
+            <span class="pfp"><img class="pfp" src="images/pfplogo.PNG"></span>
+        </div>
+        <span class="menu" id="menuIcon" onclick="toggle()">&#8801;</span>
+        <div class="navbar" id="nav">
+            <ul>
+                <li><a href="gallery.html">
+                    Calender 
+                  </a></li>
+                <li>
+                <a href="contact.html">Contact Us</a>
+                </li>
+                <li><a href="gallery.html">
+                    Image Gallery 
+                </a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSemhPa_KWVM1Jf21yqsvYOznnN05cQcvrhHJp8_8v0tZX_J4A/viewform">
+                    Join Today
+                </a></li>         
+            </ul>
+        </div>
       </header>
     <div class="body2"> 
         <div class="title"><h1 class="title-2">Painting for Purpose</h1></div>
@@ -29,6 +46,5 @@
         </div>
     </div>
     
-
 </body>
 </html>

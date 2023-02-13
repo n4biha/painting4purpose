@@ -1,81 +1,72 @@
-body{
-    background-color: #7b64e1;
-}
 *{
-    margin:0;
-    padding:0;
-    font-family: Patrick Hand, sans serif;
+    padding:0%;
+    margin:0%;
 }
 
-li,a,button{
-    font-family: Patrick Hand, sans serif;
-    font-size:17px;
-    color:rgb(30, 30, 30);
+body{
+    font-family: Patrick Hand;
+   
 }
 
 header{
+    position:relative;
+    width:100%;
+    height:100px;
+    background: #A6B1E1;
     display:flex;
-    justify-content:flex-end;
-    border-bottom:10px;
-    border-bottom-style:solid;
-    border-bottom-color:rgb(78, 132, 153);
+    align-items:center;
+    justify-content: space-between;
+
+}
+
+.brand{
+    display:flex;
     align-items: center;
-    height:60px;
-    padding:30px 10%;
-    background-color: #A6B1E1;
-    transition:.55s;
+    justify-content: space-between;
+    height:100%;
+    padding:5%;
 }
 
-.logo{
-    margin-right:auto;
-    cursor:pointer;
-    width:80px;
-    height:80px;
-    transition:.30s;
+.navbar{
+    position: relative;
+    width: 60%;
+    padding:5%;
+    height:100%;
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: end;
+    align-items: center;
+
 }
 
-.logo:hover{
-    width:90px;
-    height:90px;
+ul{
+    width:70%;
+    float:right;
 }
-
-.nav-links{
-    list-style:none;
-    width:250px;
-}
-
-.nav-links li{
+ul li{
     display:inline-block;
-    padding-top: 0px;
-    padding-left: 20px;
-    padding-right:20px;
+    margin-left: 5%;
+    padding: 1%;
 }
 
-.nav-links li a {
-    transition: .3s;
+ul li a{
     text-decoration: none;
-}
-
-.nav-links li a:hover {
-    color:#be7489;
-}
-
-button{
-    padding: 4px 25px;
-    background-color: #6499f6;
-    border:none;
-    border-radius:3px;
-    cursor:pointer;
-    transition:.3s;
+    font-size:17px;
+    transition:all 0.3s ease;
+    color:black;
     
 }
 
-button:hover{
-    background-color:#985F6F ;
-    color: rgb(255, 255, 255);
-    
+ul:hover li:hover a:hover{
+    color: rgb(190,116,137);
+
 }
 
+.pfp{
+    width:70px;
+    height:70px
+}
 
 
 .title{
@@ -90,4 +81,62 @@ button:hover{
     -webkit-background-clip: text;
     background-clip:text;
     -webkit-text-fill-color: transparent;
+}
+
+.menu{
+    font-size:70px;
+    color:rgb(41, 19, 76);
+    padding: 10%;
+    display:none;
+    margin-top:-20px;
+
+}
+
+
+@media (max-width:790px) {
+
+    header{
+        width:100%;
+    }
+    .navbar{
+        position:relative;
+        display:block;
+        width:40%;
+        display:none;
+    }
+
+    .navbar.navactive{
+        display:inline;
+    }
+    .navbar ul{
+        position: absolute;
+        width:100%;
+        height:100vh;
+        background-color:  #A6B1E1;
+    }
+
+    .menu{
+        display:inline-block;
+        cursor:pointer;
+        
+    }
+
+    .navbar ul li {
+        display:block;
+        margin-top: 20px;
+        width:100%;
+        height:50px;
+        text-align: left;
+        position:relative;
+        top:50px;
+        padding:2%;
+    }
+
+    ul li:hover{
+        background-color: #cfd4ed;
+    }
+
+    ul li a{
+        margin-left:40px;
+    }
 }
